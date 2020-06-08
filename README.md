@@ -31,8 +31,8 @@ Authors: Ander Bolumburu Casado, Álvaro Huarte Albas, Haritz Saiz Sierra, Onint
 
 - Fuzzing results files.
 
-## Fuzzing files *(/popbl_report)*
+## POPBL2 report *(/popbl_report)*
 
 - **POPBL2 Report.pdf**: The report of POBPL2.
-- **POPBL2 Report.pdf**: The anexes of POBPL2.
+- **Documents**: The anexes of POBPL2.
 
