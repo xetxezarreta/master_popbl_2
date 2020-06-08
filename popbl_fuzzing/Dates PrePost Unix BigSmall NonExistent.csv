@@ -1,0 +1,5 @@
+Task ID,Message Type,Req. Timestamp,Method,URL,Code,Reason,RTT,Size Req. Header,Size Req. Body,Size Resp. Header,Size Resp. Body,Highest Alert,State,Payloads
+0,Original,Sat Jun 06 16:32:44 CEST 2020,POST,http://staging.itapp.eus/,200,OK,956,578,114,410,8688,Low,,[]
+1,Fuzzed,Sat Jun 06 16:35:48 CEST 2020,POST,http://staging.itapp.eus/,200,OK,167,578,114,410,5335,,,[1969-01-01]
+2,Fuzzed,Sat Jun 06 16:35:49 CEST 2020,POST,http://staging.itapp.eus/,200,OK,166,578,114,410,5335,,,[1971-01-01]
+3,Fuzzed,Sat Jun 06 16:35:49 CEST 2020,POST,http://staging.itapp.eus/,500,Internal Server Error,461,578,114,249,113080,,Reflected,[1971-02-30]

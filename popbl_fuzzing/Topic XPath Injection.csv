@@ -1,0 +1,12 @@
+Task ID,Message Type,Req. Timestamp,Method,URL,Code,Reason,RTT,Size Req. Header,Size Req. Body,Size Resp. Header,Size Resp. Body,Highest Alert,State,Payloads
+0,Original,Sat Jun 06 13:22:11 CEST 2020,POST,http://staging.itapp.eus/,200,OK,7114,578,135,410,5477,,,[]
+1,Fuzzed,Sat Jun 06 13:35:42 CEST 2020,POST,http://staging.itapp.eus/,200,OK,238,578,113,410,5480,,Blocked,[' or '1'='1]
+2,Fuzzed,Sat Jun 06 13:35:42 CEST 2020,POST,http://staging.itapp.eus/,200,OK,132,578,111,410,5478,,Blocked,[' or ''=']
+3,Fuzzed,Sat Jun 06 13:35:42 CEST 2020,POST,http://staging.itapp.eus/,200,OK,133,578,121,410,5488,,Blocked,[x' or 1=1 or 'x'='y]
+4,Fuzzed,Sat Jun 06 13:35:42 CEST 2020,POST,http://staging.itapp.eus/,200,OK,131,578,103,410,5474,,Reflected,[/]
+5,Fuzzed,Sat Jun 06 13:35:43 CEST 2020,POST,http://staging.itapp.eus/,200,OK,129,578,104,410,5475,,Reflected,[//]
+6,Fuzzed,Sat Jun 06 13:35:43 CEST 2020,POST,http://staging.itapp.eus/,200,OK,130,578,105,410,5476,,Reflected,[//*]
+7,Fuzzed,Sat Jun 06 13:35:43 CEST 2020,POST,http://staging.itapp.eus/,200,OK,135,578,105,410,5476,,Reflected,[*/*]
+8,Fuzzed,Sat Jun 06 13:35:44 CEST 2020,POST,http://staging.itapp.eus/,200,OK,127,578,104,410,5475,,Reflected,[@*]
+9,Fuzzed,Sat Jun 06 13:35:44 CEST 2020,POST,http://staging.itapp.eus/,200,OK,129,578,123,410,5494,,Reflected,[count(/child::node())]
+10,Fuzzed,Sat Jun 06 13:35:45 CEST 2020,POST,http://staging.itapp.eus/,200,OK,132,578,135,410,5500,,Blocked,[x' or name()='username' or 'x'='y]

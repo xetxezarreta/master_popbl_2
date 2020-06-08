@@ -27,3 +27,5 @@ Authors: Ander Bolumburu Casado, Álvaro Huarte Albas, Haritz Saiz Sierra, Onint
 - **char_rnn/**: Char-level text generation files. Preprocessing, model fit and model predictions.
 - **word_rnn/**: Word-level text generation files. Preprocessing, model fit and model predictions.
 
+## Fuzzing files *(/popbl_fuzzing)*
+
