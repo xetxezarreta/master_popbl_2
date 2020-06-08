@@ -29,7 +29,7 @@ Authors: Ander Bolumburu Casado, Álvaro Huarte Albas, Haritz Saiz Sierra, Onint
 
 ## Fuzzing files *(/popbl_fuzzing)*
 
-- **/\* **: Fuzzing results files.
+- Fuzzing results files.
 
 ## Fuzzing files *(/popbl_report)*
 
