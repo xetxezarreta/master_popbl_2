@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<authorizations>
+    <policies>
+        <policy identifier="287edf48-da72-359b-8f61-da5d4c45a270" resource="/proxy" action="W">
+            <user identifier="7e11d187-4b64-3d4e-a4e7-df5335e3da13"/>
+            <user identifier="d5d376bb-b244-3e36-bac9-921b605d2e79"/>
+            <user identifier="e915144f-55f3-3866-adf9-1eee29317179"/>
+        </policy>
+        <policy identifier="809fe31c-7bad-3927-a252-a66098c59b4c" resource="/data/process-groups/3689967c-0172-1000-6327-e1599a673206" action="R">
+            <user identifier="7e11d187-4b64-3d4e-a4e7-df5335e3da13"/>
+            <user identifier="d5d376bb-b244-3e36-bac9-921b605d2e79"/>
+            <user identifier="e915144f-55f3-3866-adf9-1eee29317179"/>
+        </policy>
+        <policy identifier="f3ac79b6-51bc-3382-b60c-131ecc94fca0" resource="/data/process-groups/3689967c-0172-1000-6327-e1599a673206" action="W">
+            <user identifier="7e11d187-4b64-3d4e-a4e7-df5335e3da13"/>
+            <user identifier="d5d376bb-b244-3e36-bac9-921b605d2e79"/>
+            <user identifier="e915144f-55f3-3866-adf9-1eee29317179"/>
+        </policy>
+    </policies>
+</authorizations>

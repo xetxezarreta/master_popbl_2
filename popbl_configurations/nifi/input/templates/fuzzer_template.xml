@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>3b441cb9-0172-1000-0d2a-5a510710f528</groupId>
+    <name>fuzzer_template</name>
+    <snippet>
+        <connections>
+            <id>20bd4680-1cf1-3104-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>6705184e-c86f-370d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>e7081342-2ab5-33d1-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>26cc7433-cfc1-3c6d-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>f686b3e9-2b1d-3b5e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>15452a4c-d0ee-3eac-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4f8abc86-2a1f-3592-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>27b0d9d6-0b8f-38bd-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>output stream</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>f686b3e9-2b1d-3b5e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>689a6828-e488-3cab-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>17418dc7-5366-3e60-0000-000000000000</id>
+                <type>OUTPUT_PORT</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>contentFileSize</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>27b0d9d6-0b8f-38bd-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>7ae2fef5-4126-301a-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>7466866c-ac56-3a7e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>6705184e-c86f-370d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>e7fe05a5-c34c-3be9-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>15452a4c-d0ee-3eac-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>tweet</selectedRelationships>
+            <source>
+                <groupId>072c6e03-b90e-3484-0000-000000000000</groupId>
+                <id>7466866c-ac56-3a7e-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <labels>
+            <id>60cc77c3-8450-3e68-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>387.38011962502924</x>
+                <y>983.3676130730971</y>
+            </position>
+            <height>36.34442138671875</height>
+            <label>En base a los que pasan validación cambiar mike2.py
+</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>12px</value>
+                </entry>
+            </style>
+            <width>326.24853515625</width>
+        </labels>
+        <labels>
+            <id>a148cad8-b5f6-39e8-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>393.67650634377924</x>
+                <y>762.3529036004409</y>
+            </position>
+            <height>36.34442138671875</height>
+            <label>En base a los que pasan validación cambiar validación</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>12px</value>
+                </entry>
+            </style>
+            <width>326.24853515625</width>
+        </labels>
+        <labels>
+            <id>b32b4b7e-53c6-3813-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>51.06252100027632</x>
+                <y>0.0</y>
+            </position>
+            <height>91.66366577148438</height>
+            <label>Poner en marcha jsonfuzzer.py antes de abrir esto.
+
+
+En jsonfuzzer.py elegir los tipos de ataque a testear.
+
+
+Escribe en un .json JSONs fuzzeados.
+
+
+Comprobar qué procesor dan error con el fuzzing.
+
+
+Si la validación no funciona como debería cambiarlo.</label>
+            <style>
+                <entry>
+                    <key>font-size</key>
+                    <value>12px</value>
+                </entry>
+            </style>
+            <width>320.3414306640625</width>
+        </labels>
+        <outputPorts>
+            <id>17418dc7-5366-3e60-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>47.05396401470989</x>
+                <y>1329.006631230306</y>
+            </position>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <name>Nada</name>
+            <state>STOPPED</state>
+            <transmitting>false</transmitting>
+            <type>OUTPUT_PORT</type>
+        </outputPorts>
+        <processors>
+            <id>15452a4c-d0ee-3eac-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>4.941654411855325</x>
+                <y>718.1712120129245</y>
+            </position>
+            <bundle>
+                <artifact>nifi-scripting-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>4</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>
+                            <name>Script Engine</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                        <value>
+                            <name>Script File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>
+                            <name>Script Body</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                        <value>
+                            <name>Module Directory</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>python</value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>import json
+import java.io
+import string
+import re
+from org.apache.commons.io import IOUtils
+from java.nio.charset import StandardCharsets
+from org.apache.nifi.processor.io import StreamCallback
+
+
+class ModJSON(StreamCallback):
+    def __init__(self):
+        pass
+
+    def process(self, inputStream, outputStream):
+        text = IOUtils.toString(inputStream, StandardCharsets.UTF_8)
+
+        # Tratamiento
+
+        printable = set(string.printable)
+        no_emojis = ''.join(filter(lambda x: x in printable, text))
+
+        cleanr = re.compile(
+            '&lt;.*?&gt;|&amp;([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6})')
+        clean_text = re.sub(cleanr, '', no_emojis)
+        clean_text = clean_text.replace("\\n", "")
+	clean_text = clean_text.replace("\\u201c", "\"")
+	clean_text = clean_text.replace("\\u2019", "\'")
+
+        text = clean_text
+
+        # Cambio de JSON
+        obj = json.loads(text)
+        newObj = {
+            "Source": "Twitter",
+            "Tag":"Trump",
+            "Text": obj['retweeted_status']['extended_tweet']['full_text']
+	    
+        }
+        outputStream.write(
+            bytearray(json.dumps(newObj, indent=4).encode('utf-8')))
+
+
+flowFile = session.get()
+if(flowFile != None):
+    flowFile = session.write(flowFile, ModJSON())
+    flowFile = session.putAttribute(flowFile, "filename", flowFile.getAttribute(
+        'filename').split('.')[0]+'_translated.json')
+session.transfer(flowFile, REL_SUCCESS)
+session.commit()
+</value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>Validation &amp; Enrichment</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.script.ExecuteScript</type>
+        </processors>
+        <processors>
+            <id>27b0d9d6-0b8f-38bd-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>12.52653278814023</x>
+                <y>1120.9621359312623</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>
+                            <name>Routing Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>contentFileSize</key>
+                        <value>
+                            <name>contentFileSize</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>Route to Property name</value>
+                    </entry>
+                    <entry>
+                        <key>contentFileSize</key>
+                        <value>${fileSize:gt(0)}</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>MinimumFileSize</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>contentFileSize</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+        </processors>
+        <processors>
+            <id>6705184e-c86f-370d-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>4.941736090105678</x>
+                <y>303.0814391287938</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Destination</key>
+                        <value>
+                            <name>Destination</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>
+                            <name>Return Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>
+                            <name>Path Not Found Behavior</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>twitter.extended_tweet</key>
+                        <value>
+                            <name>twitter.extended_tweet</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>twitter.lang</key>
+                        <value>
+                            <name>twitter.lang</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>twitter.text</key>
+                        <value>
+                            <name>twitter.text</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Destination</key>
+                        <value>flowfile-attribute</value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>auto-detect</value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>ignore</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                    <entry>
+                        <key>twitter.extended_tweet</key>
+                        <value>$.retweeted_status.extended_tweet.full_text</value>
+                    </entry>
+                    <entry>
+                        <key>twitter.lang</key>
+                        <value>$.lang</value>
+                    </entry>
+                    <entry>
+                        <key>twitter.text</key>
+                        <value>$.text</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>EvaluateJsonPath</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+        </processors>
+        <processors>
+            <id>7466866c-ac56-3a7e-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>4.941804810539452</x>
+                <y>510.62640541708595</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>
+                            <name>Routing Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>tweet</key>
+                        <value>
+                            <name>tweet</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>Route to Property name</value>
+                    </entry>
+                    <entry>
+                        <key>tweet</key>
+                        <value>${twitter.extended_tweet:isEmpty():not():and(${twitter.lang:equals("en")})}</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>RouteOnAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>tweet</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+        </processors>
+        <processors>
+            <id>e7081342-2ab5-33d1-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>14.824511415027246</x>
+                <y>103.77235298877235</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>tail-mode</key>
+                        <value>
+                            <name>tail-mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File to Tail</key>
+                        <value>
+                            <name>File to Tail</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Rolling Filename Pattern</key>
+                        <value>
+                            <name>Rolling Filename Pattern</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>tail-base-directory</key>
+                        <value>
+                            <name>tail-base-directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Initial Start Position</key>
+                        <value>
+                            <name>Initial Start Position</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File Location</key>
+                        <value>
+                            <name>File Location</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-recursive-lookup</key>
+                        <value>
+                            <name>tailfile-recursive-lookup</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-lookup-frequency</key>
+                        <value>
+                            <name>tailfile-lookup-frequency</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-maximum-age</key>
+                        <value>
+                            <name>tailfile-maximum-age</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>tail-mode</key>
+                        <value>Single file</value>
+                    </entry>
+                    <entry>
+                        <key>File to Tail</key>
+                        <value>/home/nifi/fuzzed.json</value>
+                    </entry>
+                    <entry>
+                        <key>Rolling Filename Pattern</key>
+                    </entry>
+                    <entry>
+                        <key>tail-base-directory</key>
+                    </entry>
+                    <entry>
+                        <key>Initial Start Position</key>
+                        <value>Beginning of File</value>
+                    </entry>
+                    <entry>
+                        <key>File Location</key>
+                        <value>Local</value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-recursive-lookup</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-lookup-frequency</key>
+                        <value>10 minutes</value>
+                    </entry>
+                    <entry>
+                        <key>tailfile-maximum-age</key>
+                        <value>24 hours</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>TailFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.TailFile</type>
+        </processors>
+        <processors>
+            <id>f686b3e9-2b1d-3b5e-0000-000000000000</id>
+            <parentGroupId>072c6e03-b90e-3484-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>943.8352607508616</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Command Arguments</key>
+                        <value>
+                            <name>Command Arguments</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Command Path</key>
+                        <value>
+                            <name>Command Path</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Ignore STDIN</key>
+                        <value>
+                            <name>Ignore STDIN</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Working Directory</key>
+                        <value>
+                            <name>Working Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Argument Delimiter</key>
+                        <value>
+                            <name>Argument Delimiter</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Output Destination Attribute</key>
+                        <value>
+                            <name>Output Destination Attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Max Attribute Length</key>
+                        <value>
+                            <name>Max Attribute Length</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>PRIMARY</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Command Arguments</key>
+                        <value></value>
+                    </entry>
+                    <entry>
+                        <key>Command Path</key>
+                        <value>/home/nifi/mike2.py</value>
+                    </entry>
+                    <entry>
+                        <key>Ignore STDIN</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Working Directory</key>
+                    </entry>
+                    <entry>
+                        <key>Argument Delimiter</key>
+                        <value>;</value>
+                    </entry>
+                    <entry>
+                        <key>Output Destination Attribute</key>
+                    </entry>
+                    <entry>
+                        <key>Max Attribute Length</key>
+                        <value>256</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ExecuteStreamCommand</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>nonzero status</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>output stream</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#25ee32</value>
+                </entry>
+            </style>
+            <type>org.apache.nifi.processors.standard.ExecuteStreamCommand</type>
+        </processors>
+    </snippet>
+    <timestamp>06/08/2020 08:52:36 UTC</timestamp>
+</template>

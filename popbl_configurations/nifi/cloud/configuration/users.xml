@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tenants>
+    <groups/>
+    <users>
+        <user identifier="7e11d187-4b64-3d4e-a4e7-df5335e3da13" identity="CN=node2"/>
+        <user identifier="d5d376bb-b244-3e36-bac9-921b605d2e79" identity="CN=node3"/>
+        <user identifier="e915144f-55f3-3866-adf9-1eee29317179" identity="CN=node1"/>
+    </users>
+</tenants>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>3b454fc9-0172-1000-054d-87a0b0896756</groupId>
+    <name>gateway_template</name>
+    <snippet>
+        <connections>
+            <id>8e26eafc-f396-3f39-0000-000000000000</id>
+            <parentGroupId>9ec33deb-31e6-3b8e-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>797d964b-50fd-3938-0000-000000000000</groupId>
+                <id>34e8c3f4-5ca6-3947-a626-4a90c1b57270</id>
+                <type>REMOTE_INPUT_PORT</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <source>
+                <groupId>9ec33deb-31e6-3b8e-0000-000000000000</groupId>
+                <id>8dc90672-047c-32eb-0000-000000000000</id>
+                <type>INPUT_PORT</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <inputPorts>
+            <id>8dc90672-047c-32eb-0000-000000000000</id>
+            <parentGroupId>9ec33deb-31e6-3b8e-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>53.0</y>
+            </position>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <name>Input Port </name>
+            <state>RUNNING</state>
+            <transmitting>false</transmitting>
+            <type>INPUT_PORT</type>
+        </inputPorts>
+        <remoteProcessGroups>
+            <id>797d964b-50fd-3938-0000-000000000000</id>
+            <parentGroupId>9ec33deb-31e6-3b8e-0000-000000000000</parentGroupId>
+            <position>
+                <x>577.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <communicationsTimeout>30 sec</communicationsTimeout>
+            <contents>
+                <inputPorts>
+                    <batchSettings/>
+                    <comments></comments>
+                    <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                    <connected>true</connected>
+                    <exists>true</exists>
+                    <groupId>4bf53971-0172-1000-516d-2dfcb959203d</groupId>
+                    <id>34e8c3f4-5ca6-3947-a626-4a90c1b57270</id>
+                    <name>From Gateway</name>
+                    <targetId>ad033eba-ac08-14d9-0000-000021a42399</targetId>
+                    <targetRunning>true</targetRunning>
+                    <transmitting>true</transmitting>
+                    <useCompression>false</useCompression>
+                </inputPorts>
+            </contents>
+            <proxyHost></proxyHost>
+            <proxyUser></proxyUser>
+            <targetUri>http://node1.itapp.eus:8080/nifi</targetUri>
+            <targetUris>http://node1.itapp.eus:8080/nifi</targetUris>
+            <transportProtocol>HTTP</transportProtocol>
+            <yieldDuration>10 sec</yieldDuration>
+        </remoteProcessGroups>
+    </snippet>
+    <timestamp>06/08/2020 09:03:15 UTC</timestamp>
+</template>
