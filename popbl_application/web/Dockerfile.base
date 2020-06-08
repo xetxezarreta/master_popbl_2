@@ -1,0 +1,17 @@
+# BUILD DOCKERFILE
+# sudo docker build -t registry.gitlab.com/haritz.saiz/popbl2:base -f Dockerfile.base .
+# sudo docker push registry.gitlab.com/haritz.saiz/popbl2:base
+
+# pull official base image
+FROM python:slim-buster
+
+# set environment varibles
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# install requirements
+RUN pip install --upgrade pip && \
+    pip install \
+        gunicorn==20.0.4 \
+        Django==3.0.6 \
+        tensorflow==2.2.0

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: dev-ingress
+  annotations:
+    kubernetes.io/ingress.allow-http: "false"
+spec:
+  tls:
+  - secretName: dev-secret
+  rules:
+  - host: dev.itapp.eus
+    http:
+      paths:
+      - backend:
+          serviceName: django
+          servicePort: 80

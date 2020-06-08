@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: nginx-cmap
+    labels:
+      app: nginx
+data:
+    local.conf: |
+        upstream web {
+            ip_hash;
+            server web:8000;
+        }
+        
+        # portal
+        server {
+            location / {
+                proxy_pass http://web/;
+            }
+            listen 8000;
+            server_name localhost;
+        }

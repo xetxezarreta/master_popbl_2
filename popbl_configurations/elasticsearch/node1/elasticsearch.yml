@@ -1,0 +1,16 @@
+path.data: /home/es/elasticsearch-data
+path.logs: /home/es/elasticsearch-logs
+
+node.name: node1
+network.host: 172.31.76.156
+
+cluster.name: es-cluster
+
+discovery.seed_hosts:
+   - node1
+   - node2
+   - node3
+cluster.initial_master_nodes:
+   - node1
+   - node2
+   - node3

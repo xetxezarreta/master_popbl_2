@@ -1,0 +1,41 @@
+version: '3'
+ 
+services:
+    sonarqube:
+        image: sonarqube:lts
+        container_name: sonarqube
+        expose:
+            - "9000"
+        links:
+            - db:db
+        environment:
+            - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
+        networks:
+            - sonarnet
+    
+    db:
+        image: postgres:13
+        container_name: db
+        environment:
+            - POSTGRES_USER=sonar
+            - POSTGRES_PASSWORD=sonar
+        networks:
+            - sonarnet
+
+    nginx:
+        image: nginx:stable
+        container_name: nginx
+        ports:
+            - "443:443"
+            - "9000:9000"
+        volumes:
+            - ./nginx:/etc/nginx/conf.d
+            - ./certs:/etc/nginx/ssl
+        depends_on:
+            - sonarqube
+        networks:
+            - sonarnet           
+
+networks:
+    sonarnet:
+        driver: bridge

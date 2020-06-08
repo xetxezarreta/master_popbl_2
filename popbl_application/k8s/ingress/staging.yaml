@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: staging-ingress
+spec:
+  tls:
+  - secretName: staging-secret
+  rules:
+  - host: staging.itapp.eus
+    http:
+      paths:
+      - backend:
+          serviceName: django
+          servicePort: 80
