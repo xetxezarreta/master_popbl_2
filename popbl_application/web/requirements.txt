@@ -3,6 +3,6 @@ Django==3.1.12
 black==19.10b0
 elasticsearch-dsl==7.2.0
 coverage==5.1
-tensorflow==2.4.0
+tensorflow==2.5.0
 mock==4.0.2
 requests==2.23.0
